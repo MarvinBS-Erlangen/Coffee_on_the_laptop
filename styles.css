@@ -1,0 +1,30 @@
+.cart-container {
+    width: 30%;
+    position: fixed;
+    background-color: lightgray;
+    top: 0;
+    right: -30%;
+    min-height: 100vh;
+    box-shadow: -3px 0 40px rgba(0, 0, 0, .8);
+    transition: transform 0.5s ease-in-out;
+}
+
+.cart-container.active {
+    transform: translateX(-100%);
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+}
+
+.cart-icon:hover  {
+    cursor: pointer;
+    color: rgb(56, 56, 56);
+}
+
+.cart-icon:active {
+    font-size: 1.4rem;
+}
